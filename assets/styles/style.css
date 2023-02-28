@@ -1,0 +1,584 @@
+:root{
+    --primary:#000000;
+    --secodary_color:#FFFFFF;
+    --green-col:#36794F;
+    --main-fs:18px;
+    --ff-20:20px;
+    --sec-head-fs:36px;
+    --cont-val-fs:26px;
+    --h1-fs:44px;
+    --ff-medium:"Helvetica-medium";
+    --ff-regular:"Helvetica-regular";
+    --ff-bold:"Helvetica-bold";
+    --ff-light:"Helvetica-light";
+}
+@font-face {
+    font-family: "Helvetica-medium";
+    src: url(../font/HelveticaNeue\ Medium.ttf);
+}
+@font-face {
+    font-family: "Helvetica-bold";
+    src: url(../font/Helvetica\ Neu\ Bold.ttf);
+}
+@font-face {
+    font-family:"Helvetica-regular" ;
+    src: url(../font/HelveticaNeue.ttf);
+}
+
+@font-face {
+    font-family: "Helvetica-light";
+    src: url(../font/HelveticaNeue\ Light.ttf);
+}
+
+.container{
+    max-width: calc(1440px - 70px - 70px);
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 57px 0 42px;
+    border-bottom: 1px solid var(--primary);
+}
+
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: var(--ff-bold);
+font-size: 30px;
+line-height: 35px;
+color: var(--green-col);
+z-index: 999;
+}
+.logo::before{
+    content: 'Go';
+    color: #000000;
+}
+
+.top-nav ul {
+    display: flex;
+    column-gap: 41px;
+}
+
+.merged-nav ul li a {
+    font-family: var(--ff-medium);
+font-size: var(--main-fs);
+line-height: 22px;
+color: var(--primary);
+}
+
+.merged-nav ul li a:hover{
+color: var(--green-col);
+    border-bottom:2px solid blueviolet;
+    font-weight: 900;
+    padding-bottom: 3px;
+}
+
+.merged-nav{
+    display: flex;
+    column-gap: 111px;   
+}
+
+.icons{
+    display: flex;
+    column-gap: 32px;
+}
+
+.intr-text{
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+}
+.choose-plant{
+    margin: 170px 0 115px 0;
+}
+
+.choose-plant h2{
+    font-family: var(--ff-medium);
+font-size: var(--sec-head-fs);
+line-height: 44px;
+margin-bottom: 35px;
+}
+
+.text-about-plant h1{
+margin: 20px 0 13px 0;
+font-family: var(--ff-bold);
+font-size: var(--h1-fs);
+line-height: 54px;
+max-width: 472px;
+}
+
+.text-about-plant p{
+    font-family: var(--ff-medium);
+font-size: var(--ff-20);
+line-height: 30px;
+max-width: 418px;
+}
+
+.btn{
+    background: var(--green-col);
+    color: var(--secodary_color);
+    font-family: var(--ff-medium);
+    border-radius: 10px;
+    height: 22px;
+    font-size: var(--main-fs);
+    border: none;
+    width:196px;height:50px;
+    margin-top: 36px;
+}
+.btn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    box-shadow: var(--green-col)  0 4px 8px 0;
+}
+
+
+.plant-collection{
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: max-content max-content;
+    column-gap: 93.5px;
+    row-gap: 55px;
+}
+.soc-icons-line{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    row-gap: 24px;
+    margin-top: 243px;
+}
+.soc-icons-line svg:hover{
+    cursor: pointer;
+}
+.social_media{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    row-gap: 17px;
+    
+}
+.S-line{
+    height: 173px; width: 1px;
+    background-color: var(--primary);
+    margin-left: auto;
+}
+.see-mr{
+    grid-column: 3/4;
+    justify-self: end;
+    font-family: var(--ff-medium);
+font-size: var(--main-fs);
+line-height: 22px;
+color: var(--green-col);
+text-decoration: underline;
+}
+
+.lnk2{
+    margin-top: 41px;
+   text-align: end;
+   display: block;
+}
+
+.buttons{
+    display: flex;
+    column-gap: 25px;
+}
+
+.card{
+    width: 368px;
+    position: relative;
+}
+
+.photo{   
+width: 100%;
+height: 317px;
+border-radius: 12px;
+}
+
+.photo1{background: url(../images/png/SUCCULENT.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo2{background:url(../images/png/SPIDER-PLANT.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.photo3{background:url(../images/png/snake-plant.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo4{ background: url(../images/png/CORN-PLANT.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo5{background: url(../images/png/Cactus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo6{background: url(../images/png/rubber-fig.png);
+    background-repeat: no-repeat;background-size: cover;   
+}
+.card:hover > .photo{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.card:hover > .description{
+    background-color: var(--green-col);
+    cursor: pointer;
+}
+
+.card:hover > .cart{
+    display: block;
+    z-index: 999;
+    background-color: var(--secodary_color);
+    cursor: pointer;
+}
+.cart{
+    width: 216px;
+    height: 50px;
+    border-radius: 10px;
+    display: none;
+    left: 20%;
+    top: 50%;
+    position: absolute;
+    padding: 13px 47px 13px 47px;
+}
+
+.cart span{
+    font-family: var(--ff-medium);
+font-size: 19px;
+line-height: 23px;
+color: var(--green-col);
+}
+
+.description{
+    background-color:rgba(54, 121, 79, 0.55);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 28px 0 13px;
+    width: 100%;
+    height: 37px;
+    align-items: center;
+}
+
+.description span{
+    color: var(--secodary_color);
+    font-family: var(--ff-medium);
+    font-size: 19px;
+}
+.introd-about-plant{
+    display: flex;
+    max-width: 1210px;
+    margin: 0 auto;
+}
+
+ .main-photo{
+    background: url(../images/png/main-Plant.png);
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    top: 2%;
+} 
+
+.care{
+    display: flex;
+    justify-content:space-between;
+}
+
+.article{
+    width: 638px;
+}
+.bloom-scape, .dracaena{
+    width: 100%;
+    padding: 20px 0 15px 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 13px 1px rgba(209, 209, 209, 0.31);
+}
+
+.bloom-scape h3, .dracaena h3{
+    font-family: var(--ff-medium);
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 32px;
+}
+
+.bloom-scape p, .dracaena p{
+    font-family: var(--ff-light);
+font-size: var(--main-fs);
+line-height: var(--ff-20);
+letter-spacing: 0.03em;
+}
+.plant-acc{
+padding: 202px 0 195px 0;
+}
+
+.accessories h3{
+    font-family: var(--ff-medium);
+font-size: var(--sec-head-fs);
+line-height: 44px;
+}
+
+.accessories{
+    display: flex;
+    column-gap: 86px;
+    position: relative;
+    margin-top: 44px;
+}
+
+.box{width: 744px;
+    box-shadow: 10px 23px 29px 14px rgba(215, 242, 225, 0.2);
+    background: rgba(236, 241, 238, 1);
+    padding: 94px 125px 94px 108px;
+    border-radius: 16px;
+    position: absolute;
+    top: 21%;
+    left: 42%;
+}
+
+.box p {
+    font-family: var(--ff-medium);
+font-size: var(--ff-20);
+line-height: 24px;
+color: var(--primary);
+}
+
+.box p:nth-child(1){
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: var(--green-col);
+    padding: 36px 0 21px;
+}
+.footer-merged{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left-side > a{
+    font-family: var(--ff-bold);
+font-size: 30px;
+line-height: 37px;
+color: var(--secodary_color);
+}
+
+.footer-left-side > a::before{
+    font-family: var(--ff-medium);
+    content: "Go";
+font-size: 30px;
+line-height: 37px;
+}
+
+#email{
+    border-radius: 10px;
+    border:1px solid var(--secodary_color);
+    width: 307px;
+    height: 50px;
+    background: var(--green-col);
+    padding: 14px 12px;
+}
+
+#email::placeholder{
+    font-family: var(--ff-medium);
+    font-size: var(--main-fs);
+    line-height: 22px;
+    color: var(--secodary_color);
+}
+
+.btn-arrow{
+    background: none;
+    border: none;
+    position: relative;
+}
+
+.btn-arrow svg{
+    cursor: pointer;
+}
+
+.footer-left-side form{
+    margin: 21px 0 53px 0;
+}
+
+.arrow{
+    position: absolute;
+    right: 35px;
+    bottom: -2px;
+}
+
+.footer-left-bottom p{
+    font-family: var(--ff-medium);
+    font-size: var(--main-fs);
+    line-height: 22px;
+    color: var(--secodary_color);
+}
+
+.soc-icons{
+    display: flex;
+    gap: 25px;
+    
+}
+.soc-icons svg{cursor: pointer;}
+
+.footer-left-side {
+    display: flex;
+    flex-direction: column;
+    row-gap: 86px;
+}
+
+.footer-right-side{
+    display: flex;
+    gap: 130px;
+}
+
+.footer-right-part1 a:nth-child(1), .footer-right-part2 a:nth-child(1), .footer-right-part3 a:nth-child(1){
+    font-family: var(--ff-bold);
+font-size: var(--main-fs);
+line-height: 22px;
+color: var(--secodary_color);
+margin-bottom: 17px;
+}
+
+.footer-right-part1 a:nth-child(n+2), .footer-right-part2 a:nth-child(n+2), .footer-right-part3 a:nth-child(n+2){
+    font-family: var(--ff-regular);
+font-size: var(--main-fs);
+line-height: 21px;
+color: var(--secodary_color);
+margin-top: 6px;
+
+}
+
+.footer-right-part1, .footer-right-part2,.footer-right-part3{
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    width: 100%;
+    background: var(--secodary_color);
+    height: 1px;
+    margin: 33px 0 23px 0;
+}
+
+footer ul{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+footer ul li a{
+    font-family: var(--ff-regular);
+font-size: var(--main-fs);
+line-height: 21px;
+color: var(--secodary_color);
+
+}
+/* Contact */
+.back-img{
+    background: url(../images/png/backg-img.png);
+    width: 100%;
+    height: 1079px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.back-img-inner{
+    background: rgba(1, 96, 27, 0.5);
+    width: 95%;
+    height: 1040px;
+    z-index: 2;
+    position: absolute;
+    left: 2.5%;
+    top: 2.5%;
+}
+
+.information{
+    position: absolute;
+    top: 50px;
+    left: 131px;
+    z-index: 998;
+}
+
+.information h1{
+    font-family: var(--ff-bold);
+font-size: 30px;
+line-height: 37px;
+color: white;
+text-align: center;
+}
+.cont-inf{
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 323px;
+    row-gap: 30px;
+    margin: 110px 0 256px 0;
+}
+
+.cont-inf a, .cont-inf svg{
+    justify-self: center;
+}
+
+.cont-inf a {
+    color: var(--secodary_color);
+    font-size: 26px;
+    font-family: var(--ff-medium);
+}
+
+.form-wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 120px;
+    row-gap: 52px;
+    margin: 0 auto;
+    max-width: 710px;
+}
+
+.form-wrapper label{
+    display: block;
+    margin-bottom: 11px;
+    color: var(--secodary_color);
+    font-family: var(--ff-medium);
+line-height: 20px;
+}
+
+.form-wrapper input, textarea{
+    display: block;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 16px;
+    border-radius: 12px;
+}
+
+.message{
+    grid-column: 1/3;
+}
+.contact-sec{
+    margin: 144px 0 69px 0;
+}
+.map{width: 1043px;
+    border: 1px solid var(--green-col);
+    margin: 0 auto;
+    padding: 63px 84px;
+    margin-top: 55px;
+}
+.location{margin-bottom: 97px;}
+
+.location h1{
+    font-family:var(--ff-bold);
+font-size: 30px;
+line-height: 37px;
+text-align: center;
+}
+
+
+
+
+
+
