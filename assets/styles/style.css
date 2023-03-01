@@ -57,6 +57,11 @@ z-index: 999;
     content: 'Go';
     color: #000000;
 }
+.logo:hover{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+}
 
 .top-nav ul {
     display: flex;
